@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var inputValue:String = "John Appleseed"
+    @State var inputValue:String = "Cristian Misael"
     var body: some View {
         TextField("Name", text:$inputValue)
     }
