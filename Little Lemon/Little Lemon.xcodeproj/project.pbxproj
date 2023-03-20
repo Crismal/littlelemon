@@ -29,6 +29,9 @@
 		28EA104629C8099D0054C1BD /* DisplayDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA104529C8099D0054C1BD /* DisplayDish.swift */; };
 		28EA104829C809B90054C1BD /* DishesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA104729C809B90054C1BD /* DishesModel.swift */; };
 		28EA104A29C809D10054C1BD /* JSONMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA104929C809D10054C1BD /* JSONMenu.swift */; };
+		28EA104D29C80A6A0054C1BD /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA104C29C80A6A0054C1BD /* Reservation.swift */; };
+		28EA104F29C80A800054C1BD /* ReservationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA104E29C80A800054C1BD /* ReservationForm.swift */; };
+		28EA105129C80A980054C1BD /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA105029C80A980054C1BD /* ReservationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		28EA104529C8099D0054C1BD /* DisplayDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDish.swift; sourceTree = "<group>"; };
 		28EA104729C809B90054C1BD /* DishesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesModel.swift; sourceTree = "<group>"; };
 		28EA104929C809D10054C1BD /* JSONMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMenu.swift; sourceTree = "<group>"; };
+		28EA104C29C80A6A0054C1BD /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		28EA104E29C80A800054C1BD /* ReservationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationForm.swift; sourceTree = "<group>"; };
+		28EA105029C80A980054C1BD /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 		280F217B29C7D53D006687B7 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				28EA104B29C80A5E0054C1BD /* Reservation */,
 				28EA104229C809700054C1BD /* OurDishes */,
 				28EA103229C8088A0054C1BD /* CoreData */,
 				28EA102229C807D60054C1BD /* Views */,
@@ -143,6 +150,16 @@
 				28EA104929C809D10054C1BD /* JSONMenu.swift */,
 			);
 			path = OurDishes;
+			sourceTree = "<group>";
+		};
+		28EA104B29C80A5E0054C1BD /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				28EA104C29C80A6A0054C1BD /* Reservation.swift */,
+				28EA104E29C80A800054C1BD /* ReservationForm.swift */,
+				28EA105029C80A980054C1BD /* ReservationView.swift */,
+			);
+			path = Reservation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +237,12 @@
 				28EA103C29C809070054C1BD /* PersistenceController.swift in Sources */,
 				28EA103429C8089E0054C1BD /* Customer.swift in Sources */,
 				280F217F29C7D53D006687B7 /* ContentView.swift in Sources */,
+				28EA104D29C80A6A0054C1BD /* Reservation.swift in Sources */,
 				28EA104829C809B90054C1BD /* DishesModel.swift in Sources */,
 				28EA102C29C8083C0054C1BD /* HomeView.swift in Sources */,
+				28EA104F29C80A800054C1BD /* ReservationForm.swift in Sources */,
 				28EA103629C808BB0054C1BD /* Dessert.swift in Sources */,
+				28EA105129C80A980054C1BD /* ReservationView.swift in Sources */,
 				28EA102829C808100054C1BD /* ToggleStyle.swift in Sources */,
 				28EA103A29C808EC0054C1BD /* Location.swift in Sources */,
 				28EA103E29C809150054C1BD /* FetchedObjects.swift in Sources */,
