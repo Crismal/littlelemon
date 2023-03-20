@@ -44,7 +44,7 @@ struct ProfileView: View {
                 profilePictureInfo
                 lemonProfileForm
                 lemonCheckboxes
-        
+                
                 VStack(alignment: .center) {
                     NavigationLink(destination: SplashView().navigationBarBackButtonHidden(true),isActive: $isActive) {EmptyView()}
                     logoutButton
@@ -76,7 +76,7 @@ struct ProfileView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack {
                         NavigationLink(destination: ProfileView()) {
-                            Image("profilePicture")
+                            Image(systemName: "person")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:36.0, height:36.0)
@@ -118,13 +118,13 @@ struct ProfileView: View {
                 .font(.system(size: 12.0))
                 .foregroundColor(.gray)
             HStack(spacing: 16.0) {
-                Image("profilePicture")
+                Image(systemName: "person")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 80.0, height: 80.0)
                     .cornerRadius(40.0)
                 Button(action: {
-                    print("Background Color")
+                    print("No action yet!")
                 }, label: {
                     Text("Change")
                         .font(.system(size: 14.0))
@@ -135,7 +135,7 @@ struct ProfileView: View {
                         .cornerRadius(6.0)
                 })
                 Button(action: {
-                    print("Background Color")
+                    print("No action yet!")
                 }, label: {
                     Text("Remove")
                         .font(.system(size: 14.0))

@@ -45,8 +45,8 @@ struct HomeView: View {
                     }
             }
             .navigationBarColor(.white)
-                        .navigationBarHidden(false)
-        .navigationBarTitle("Home", displayMode: .inline)
+            .navigationBarHidden(false)
+            .navigationBarTitle("Home", displayMode: .inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     HStack(spacing: 0.0) {
@@ -64,7 +64,7 @@ struct HomeView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack {
                         NavigationLink(destination: ProfileView()) {
-                            Image("profilePicture")
+                            Image(systemName: "person")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:36.0, height:36.0)

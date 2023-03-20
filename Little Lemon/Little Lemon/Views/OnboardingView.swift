@@ -17,26 +17,26 @@ struct OnboardingView: View {
     @State var isActive: Bool = false
     
     var body: some View {
-    NavigationView {
-        VStack(alignment: .leading) {
-            heroView
-            onboardingForm
-            VStack(alignment: .center) {
-                NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true),
-                               isActive: $isActive) {
-                    EmptyView()
+        NavigationView {
+            VStack(alignment: .leading) {
+                heroView
+                onboardingForm
+                VStack(alignment: .center) {
+                    NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true),
+                                   isActive: $isActive) {
+                        EmptyView()
+                    }
+                    registerButton
                 }
-                registerButton
-            }
-            .padding()
-            .background(greenColor)
-        }.frame(
-            maxWidth: .infinity,
-            maxHeight: .infinity
-        ).background(greenColor)
-    }
+                .padding()
+                .background(greenColor)
+            }.frame(
+                maxWidth: .infinity,
+                maxHeight: .infinity
+            ).background(greenColor)
+        }
         
-}
+    }
     private var registerButton: some View {
         Button(action: {
             UserDefaults.standard.set(firstName, forKey: lemonFirstName)
@@ -96,8 +96,8 @@ struct OnboardingView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Text("Last name *")
-             TextField("Last name", text: $lastName)
-             .textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("Last name", text: $lastName)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             Text("Email *")
             TextField("tillydoe@example.com", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
