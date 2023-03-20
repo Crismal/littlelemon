@@ -44,7 +44,7 @@ struct ProfileView: View {
                 profilePictureInfo
                 lemonProfileForm
                 lemonCheckboxes
-        
+                
                 VStack(alignment: .center) {
                     NavigationLink(destination: SplashView().navigationBarBackButtonHidden(true),isActive: $isActive) {EmptyView()}
                     logoutButton

@@ -61,7 +61,7 @@ struct OurDishes: View {
             }
             
             // makes the list background invisible, default is gray
-                   //.scrollContentBackground(.hidden)
+            //.scrollContentBackground(.hidden)
             
             // runs when the view appears
                    .task {

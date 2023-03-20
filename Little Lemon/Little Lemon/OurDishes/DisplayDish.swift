@@ -17,11 +17,11 @@ struct DisplayDish: View {
         HStack{
             Text(dish.name ?? "")
                 .padding([.top, .bottom], 7)
-
+            
             Spacer()
-
+            
             Text(dish.formatPrice())
-                //.monospaced()
+            //.monospaced()
                 .font(.callout)
         }
         .contentShape(Rectangle())

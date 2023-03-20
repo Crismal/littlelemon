@@ -10,15 +10,15 @@ import CoreData
 
 @objc(Customer)
 public class Customer: NSManagedObject {
-
+    
 }
 
 extension Customer {
-
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Customer> {
         return NSFetchRequest<Customer>(entityName: "Customer")
     }
-
+    
     @NSManaged public var email: String?
     @NSManaged public var fistName: String?
     @NSManaged public var lastName: String?
@@ -26,28 +26,28 @@ extension Customer {
     @NSManaged public var fromLocation: NSSet?
     @NSManaged public var toDessert: NSSet?
     @NSManaged public var toDish: NSSet?
-
+    
 }
 
 // MARK: Generated accessors for fromLocation
 extension Customer {
-
+    
     @objc(addFromLocationObject:)
     @NSManaged public func addToFromLocation(_ value: Location)
-
+    
     @objc(removeFromLocationObject:)
     @NSManaged public func removeFromFromLocation(_ value: Location)
-
+    
     @objc(addFromLocation:)
     @NSManaged public func addToFromLocation(_ values: NSSet)
-
+    
     @objc(removeFromLocation:)
     @NSManaged public func removeFromFromLocation(_ values: NSSet)
-
+    
 }
 
 extension Customer : Identifiable {
-
+    
     private static func request() -> NSFetchRequest<NSFetchRequestResult> {
         let request: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: String(describing: Self.self))
         request.returnsDistinctResults = true
@@ -63,7 +63,7 @@ extension Customer : Identifiable {
         
         let predicate = NSPredicate(format: "fistName == %@ AND lastName == %@", firstName, lastName)
         request.predicate = predicate
-                
+        
         do {
             guard let results = try context.fetch(request) as? [Customer],
                   results.count > 0

@@ -10,7 +10,7 @@ import CoreData
 
 @objc(Dish)
 public class Dish: NSManagedObject {
-
+    
     func formatPrice() -> String {
         let spacing = price < 10 ? " " : ""
         return "$ " + spacing + String(format: "%.2f", price)
@@ -29,7 +29,7 @@ extension Dish {
     @NSManaged public var dishDescription: String
     @NSManaged public var imageURL: String
     @NSManaged public var category: String
-
+    
 }
 
 // MARK: Generated accessors for fromCustomer
@@ -68,7 +68,7 @@ extension Dish {
 
 extension Dish : Identifiable {
     
-
+    
     static func request() -> NSFetchRequest<NSFetchRequestResult> {
         let request: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: String(describing: Self.self))
         request.returnsDistinctResults = true
@@ -132,13 +132,13 @@ extension Dish : Identifiable {
             guard let persistentStoreCoordinator = context.persistentStoreCoordinator else { return }
             try persistentStoreCoordinator.execute(deleteRequest, with: context)
             save(context)
-
+            
         } catch let error as NSError {
             print(error.localizedDescription)
         }
     }
-
-
+    
+    
     static func save(_ context:NSManagedObjectContext) {
         guard context.hasChanges else { return }
         do {
