@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var inputValue:String = "John Appleseed"
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        TextField("Name", text:$inputValue)
     }
 }
 
